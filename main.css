@@ -1,0 +1,273 @@
+/* Cuestiones generales */
+
+body {
+    background-color: skyblue;
+}
+
+h2 {
+   text-align: center;
+   background-color: skyblue;
+   transition: 1s linear;
+}
+
+/* Armado del header */
+header {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+nav ul {
+    text-decoration: none;
+    list-style-type: none;
+    align-content: center;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    list-style: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    color: yellow;
+    
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+/* Fin del armado del header */
+
+p {
+    font-size: medium;
+    text-align: left;
+    font-family: 'Roboto Slab', serif;
+     
+}
+
+/* Fin de cuestiones generales */
+
+/* Página Home */
+
+.home {
+    background-color: skyblue;
+}
+
+.iframe-home {  
+
+
+    }
+    
+/* Footer */
+footer {
+    background-color: black;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: white;
+   
+}
+
+.home-footer {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.home-footer h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+.home-footer p {
+   margin: 10px;
+   line-height: 28px;
+   font-size: 14px; 
+   justify-content: center;
+   white-space: nowrap
+}
+
+.redes {
+    background-color: white;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.footer-frase {
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-frase p {
+    font-size: 12px;
+    word-spacing: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+/* Grid para organizar pagina noticias */
+
+.noticias {
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.noticias div { 
+    border: solid 2px black;
+
+}
+
+/* Página noticias */
+
+/* Tamaño texto */
+.noticias p { 
+    margin: 15px;
+}
+
+.noticias h3 { 
+    font-size: x-large;
+}
+
+/* Fijar tamaño imágenes */
+
+.tamaño {
+    width: 600px;
+    height: 400px;
+  }
+
+  
+/* Página Fase de grupos */
+
+/* Armado de los cuadros de grupos */
+
+.col td {
+    
+    border: solid 1px black;
+}
+
+.col th {
+    
+    border: solid 1px black;
+}
+
+thead {
+    background-color: white;
+}
+
+/* Hover para cuadros de grupos */
+.grupo1:hover{
+
+    background-color: gray;
+    transform: scale(1.1);
+}
+
+
+/* Grid para ordenar los grupos */
+
+.contenedor {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    margin-left: 94px;
+    }
+
+/* Estilos de los grupos */
+
+
+
+/* Página Fase Eliminatoria */
+
+/* Ordenar el formulario */
+
+.form-eliminatoria {
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.pregunta-eliminatoria {
+  justify-content: center;
+}
+
+.form-eliminatoria label {
+    font-size: large;
+    text-decoration: underline;
+}
+
+#area-correo {
+   position: relative;
+   left: 2em;
+}
+
+/* Página estadística */ 
+
+/* Fondo de la página */
+
+.estadistica {
+    background-image: url("public/numeros.jpg");
+    background-size: auto;
+        
+}
+
+.tablas-estadisticas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+
+}
+
+.tablas-estadisticas th {
+    border: solid 1px black;
+
+}  
+
+.tablas-estadisticas td {
+    border: solid 1px black;
+
+}  
+/* Media queries */
+
+@media screen and (min-width: 768px) {
+
+    .contenedor {
+        margin-left: 200px;
+        }
+
+    .contenedor h3 {
+    margin-right: 100px;
+    }
+
+    .tablas-estadisticas {
+    margin-left: 23px;
+    }
+
+    .pregunta-eliminatoria {
+    margin-left: 150px;
+    }
+}
+
