@@ -59,30 +59,29 @@ p {
 
 .home {
     background-color: skyblue;
+    display: grid;
+    margin-top: 30px;
 }
 
 .iframe-home {  
-
-
+    margin: auto;
+    padding: 20px;
     }
     
 /* Footer */
 footer {
     background-color: black;
     font-family: "Open Sans";
-    padding-top: 40px;
+    padding-top: 20px;
     color: white;
-   
 }
 
 .home-footer {
-    display: flex;
     align-items: center;
-    justify-items: center;
     flex-direction: column;
     text-align: center;
-    
-}
+    bottom: 0;
+    }
 
 .home-footer h3 {
     font-size: 1.8rem;
@@ -104,7 +103,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 3rem 0;
+    margin: 1rem 0 2rem 0;
 }
 
 .footer-frase {
@@ -121,8 +120,6 @@ footer {
     justify-content: center;
 
 }
-
-
 
 /* Grid para organizar pagina noticias */
 
