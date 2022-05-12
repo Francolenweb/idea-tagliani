@@ -1,0 +1,33 @@
+.header {
+    text-align: center;
+    background-color: "$color-secundary";
+
+    nav ul {
+        text-decoration: none;
+        list-style-type: none;
+        align-content: center;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+    }
+
+    nav ul li a{
+        display: inline-block;
+        text-decoration: none;
+        list-style-type: none;
+        list-style: none;
+    }
+    
+    nav ul li a:hover{
+        text-decoration: underline;
+        color: yellow;
+        
+    }
+
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+}

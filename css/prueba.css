@@ -1,0 +1,24 @@
+.header {
+  text-align: center;
+  background-color: "$color-secundary"; }
+  .header nav ul {
+    text-decoration: none;
+    list-style-type: none;
+    align-content: center; }
+  .header nav ul li {
+    display: inline-block;
+    list-style: none; }
+  .header nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    list-style: none; }
+  .header nav ul li a:hover {
+    text-decoration: underline;
+    color: yellow; }
+  .header .logo {
+    width: 150px;
+    height: 150px; }
+
+body {
+  background-color: #83bede; }
