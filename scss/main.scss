@@ -1,6 +1,44 @@
 @import "variables";
 @import "header";
-
+ 
 body {
     background-color: $color-primary;
 }
+
+// Maps
+
+$redes: (
+    twitter: #79beff,
+    facebook: #2222ec,
+    Instagram: #eb46faf7,
+);
+
+@each $red, $color in $redes {
+    .red-#{$red} {
+        color: $color;
+    }
+}
+
+// Extend
+
+.nav-li {
+    display: inline-block;
+    list-style: none;
+}
+
+.nav-li-a {
+    @extend .nav-li;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+// Mixin
+@mixin size ($alto, $ancho, $espaciado) {
+    height: $alto;
+    width: $ancho;
+    margin: $espaciado;
+}
+
+.home-footer {
+    @include size (100px,150px,0px )
+ }

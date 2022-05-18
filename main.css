@@ -18,15 +18,18 @@ h2 {
 
 nav ul {
     text-decoration: none;
+    list-style: none;
     list-style-type: none;
     align-content: center;
+    
 }
 
-nav ul li {
+.nav-li {
     display: inline-block;
     list-style: none;
 }
-nav ul li a{
+
+.nav-li-a {
     display: inline-block;
     text-decoration: none;
     list-style-type: none;
