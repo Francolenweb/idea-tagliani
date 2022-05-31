@@ -1,5 +1,7 @@
 /* Cuestiones generales */
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body {
     background-color: skyblue;
 }
@@ -11,42 +13,28 @@ h2 {
 }
 
 /* Armado del header */
-.header {
-    text-align: center;
-    background-color: rgb(255, 255, 255);
+
+header {
+    background-color: rgb(181, 68, 68);
+    font-family: 'Oswald', sans-serif;
+    font-size: 23px;
+    color: white;
 }
 
-nav ul {
+nav {
+    margin-left: 5px;
+    padding-left: 20px;
+}
+
+#navbarSupportedContent {
     text-decoration: none;
-    list-style: none;
-    list-style-type: none;
-    align-content: center;
-    
+    color: aliceblue;
 }
 
-.nav-li {
-    display: inline-block;
-    list-style: none;
-}
 
-.nav-li-a {
-    display: inline-block;
-    text-decoration: none;
-    list-style-type: none;
-    list-style: none;
-}
-
-nav ul li a:hover{
-    text-decoration: underline;
-    color: yellow;
-    
-}
-
-.logo {
+#navbarSupportedContent ul li {
     width: 150px;
-    height: 150px;
 }
-
 /* Fin del armado del header */
 
 p {
