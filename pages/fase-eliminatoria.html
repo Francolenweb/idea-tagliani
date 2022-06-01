@@ -22,63 +22,69 @@
     
 <!-- Inicio Header --> 
 <header>
-    <img src="../public/logo-qatar-fifa.jpg" class="logo" alt="Logo Mundial de Qatar 2022"/>
-    
-        <h1>Qatar 2022</h1>
-     
-<nav>
-    <ul>
-
-            
-        <li><a href="../index.html">Home</a></li> &nbsp; &nbsp;
-        <li><a href="../pages/noticias.html">Noticias</a></li>  &nbsp; &nbsp;
-        <li><a href="../pages/fase-de-grupos.html">Fase de Grupos</a></li>  &nbsp; &nbsp;
-        <li><a href="../pages/fase-eliminatoria.html">Fase Eliminatoria</a></li>  &nbsp; &nbsp;
-        <li><a href="../pages/estadisticas.html">Estadisticas</a></li> 
-
-    </ul>
-</nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <div class="container-fluid">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../public/logo-qatar-fifa.jpg" alt="" width="140" height="100" class="d-inline-block align-text-top img-fluid img-thumbnail rounded-pill ">
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item m-4">
+            <a class="nav-link text-light" aria-current="page" href="../pages/noticias.html">Noticias</a>
+          </li>
+          <li class="nav-item m-4">
+            <a class="nav-link text-light" href="../pages/fase-de-grupos.html">Fase de Grupos</a>
+          </li>
+          <li class="nav-item m-4">
+            <a class="nav-link text-light" href="../pages/fase-eliminatoria.html">Fase Eliminatoria</a>
+          </li>
+          <li class="nav-item m-4">
+            <a class="nav-link text-light" href="../pages/estadisticas.html">Estadísticas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>
 <!-- Fin Header --> 
 
 <!-- Comienzo main -->
-<main>
+<main class="fdgMain">
 
-    <h2>Fase Eliminatoria</h2>
+  <div id="Portada">
 
+    <h2 class="feTitle">Fase Eliminatoria</h2>
+  </div>
     <!-- Como no se saben los cruces, se incluye un formulario sobre quien cree que clasificará --> 
 
     
     <h3 class="pregunta-eliminatoria">¿Quienes son los candidatos a clasificar a la fase de eliminariorias? </h3>
 
-    <div class="form-eliminatoria">
+    <div class="form-eliminatoria row gap-3 border border-5 border-white">
 
-    <form action="" method="" enctype="">
-
-        <div>
-            <label for="">Correo electrónico</label>
-            <input id="area-correo" type="text">
-        </div>
-
-        <br>
-
-        <div>
-            <label for="">Indique sus candidatos</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-        </div>
-
-        <br>
-        <br>
-
-        <input type="button" value="Enviar">
-
-
-    </form>
-</div>
+      <div class="col-6 col-lg-4 mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="col-6 col-lg-6 mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Indique su candidato</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class=" col col-lg-2">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </div>
+    </div>  
+  
+    
 <!-- Fin formulario -->
 
 <!-- Tabla favoritos apuestas -->
-<div class="favoritosapuestas">
+<div class="favoritosapuestas border-top border-3 border-white">
 
 <h3>Favoritos según casas de apuestas</h3>
 
@@ -91,7 +97,7 @@
       <div class="col">
         <table class="table">
             <thead class="thead-dark">
-              <tr>
+              <tr class="table-dark">
                 <th scope="col">País</th>
                 <th scope="col">Betway</th>
                 <th scope="col">Bet365</th>
